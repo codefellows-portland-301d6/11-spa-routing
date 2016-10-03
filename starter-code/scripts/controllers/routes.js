@@ -1,7 +1,6 @@
-
-
-page('/about', aboutController);
-page('/article', articleController);
+console.log('Reading Routes');
+page('/about', aboutController.reveal);
+page('/article', articleController.reveal);
 // page('/admin', adminController);
 
 /* TODO: Configure our two routes for this app with page.js,
