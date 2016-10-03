@@ -71,7 +71,7 @@
     /* TODO: Remember to also remove any calls to the handleMainNav function elsewhere. */
     articleView.handleCategoryFilter();
     articleView.handleAuthorFilter();
-    articleView.handleMainNav();
+    // articleView.handleMainNav();
     articleView.setTeasers();
   };
   Article.fetchAll(articleView.renderIndexPage);
