@@ -1,14 +1,14 @@
-console.log('Reading Routes');
-page('/about', aboutController.reveal);
-page('/article', articleController.reveal);
-// page('/admin', adminController);
-
-/* TODO: Configure our two routes for this app with page.js,
+/* DONE: TODO: Configure our two routes for this app with page.js,
+/* DONE: TODO: Configure our two routes for this app with page.js,
 by registering each URL your app can handle;, linked to a
 single controller function to handle it: */
 
+page('/', articleController.reveal);
+page('/about', aboutController.reveal);
+page('/articles', articleController.reveal);
+// page('/admin', adminController);
 
 
-/* TODO: --DONE!-- What function do we call to activate page.js?
+/* DONE: TODO: --DONE!-- What function do we call to activate page.js?
     Fire it off now, to execute it: */
 page();
