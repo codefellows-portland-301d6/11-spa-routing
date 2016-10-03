@@ -1,4 +1,4 @@
-(function() {
+(function(module) {
   var adminView = {
     initAdminPage : function() {
       var template = Handlebars.compile($('#author-template').text());
@@ -9,6 +9,6 @@
       $('#blog-stats .words').text(Article.numWordsAll());
     }
   };
-
-  Article.fetchAll(articleView.initAdminPage);
-})();
+  module.adminView = adminView;
+  Article.fetchAll(adminView.initAdminPage);
+})(window);
