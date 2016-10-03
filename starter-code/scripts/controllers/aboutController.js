@@ -5,7 +5,7 @@
 
     /* DONE: TODO: Reveal only the about section! */
     $('.tab-content').hide();
-    $('#about').data('content').fadeIn();
+    $('#about').fadeIn();
   };
 
   module.aboutController = aboutController;
