@@ -73,6 +73,7 @@
     articleView.handleAuthorFilter();
     // articleView.handleMainNav();
     articleView.setTeasers();
+    Article.adminView();
   };
   Article.fetchAll(articleView.renderIndexPage);
   module.articleView = articleView;

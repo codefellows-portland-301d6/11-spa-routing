@@ -96,6 +96,15 @@
     });
   };
 
+  Article.adminView = function () {
+    var template = Handlebars.compile($('#admin-template').text());
+    Article.numWordsByAuthor().forEach(function(stat) {
+      $('.author-stats').append(template(stat));
+    });
+    $('#blog-stats .articles').text(Article.allArticles.length);
+    $('#blog-stats .words').text(Article.numWordsAll());
+  };
+
   Article.allAuthors = function() {
     return Article.allArticles.map(function(article) {
       return article.author;
